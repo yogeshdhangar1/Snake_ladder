@@ -5,8 +5,11 @@ public class Playsnakeladder {
     public static final int ladder = 3;
 
     public static void main(String[] args) {
-        int start = 0;
+        int start =0;
+        int count = 0;
+
         while (start <= 100) {
+            count++;
             int dice = (int) Math.floor(Math.random() * 10 % 6 + 1);
             int option = (int) Math.floor(Math.random() * 10 % 3 + 1);
 
@@ -14,7 +17,7 @@ public class Playsnakeladder {
                 System.out.println("You Won");
                 break;
             }
-            System.out.println("Option:"+option+"Dice:"+dice);
+            System.out.println("Option:"+option+"Dice:"+dice+"DiceCount:"+count);
             // case statement
             switch (option) {
                 case ladder:
